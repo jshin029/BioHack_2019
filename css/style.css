@@ -48,14 +48,54 @@ nav a:hover::before {
 	width: 100%
 }
 
+#main-page {
+	background-image: url("../img/background.png");
+}
+
 #main-bg {
-	background-image: url("../img/logo.png"), url("../img/logobg.png"), url("../img/background.png");
+	background-image: url("../img/background.png");
 	background-attachment: fixed;
 	background-position: 50% 40%, center, center; 
 	background-repeat: no-repeat;
 	background-size: auto, auto, cover;
 	height: 95vh;
 	width: 200vh;
+}
+/*container for the big hero elements (date, biohack text logo, and hexagon background) */
+#title-wrapper {
+	text-align:center;
+  	position: absolute;
+  	margin: auto;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 475px;
+}
+
+/*container for hero images (biohack text logo, hexagon background)*/
+#logo-img-wrapper {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#logo-bg {
+	position: absolute;
+	top: -10px;
+	left: 26.5vw;
+
+	z-index: 1;
+}
+
+#logo-txt {
+	position: relative;
+	top: 70px;
+	left: 0;
+	width: 480px;
+
+	z-index: 3;
 }
 
 .date {
@@ -66,12 +106,15 @@ nav a:hover::before {
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 500;
-	line-height: normal;
+	line-height: 1rem;
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 0.2em;
 	color: #ffff;
-	
+	margin-top: 20px;
+
+
+	z-index: 5;
 }
 
 #second-page {
